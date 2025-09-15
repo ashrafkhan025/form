@@ -1,0 +1,76 @@
+body {
+  display: flex;
+  justify-content: center;  /* center horizontally */
+  align-items: center;      /* center vertically */
+  min-height: 100vh;        /* make body full height of the screen */
+  margin: 0;                /* remove default body margin */
+}
+
+
+.card{
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display:flex;
+    flex-direction:column;
+    
+    justify-content: center;
+    align-items: center;
+    background-color: #d1acac;
+
+}
+#Regform{
+    
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+}
+label{
+   
+    display:block;
+    width: 350px;
+    padding:0rem;
+}
+input{
+    margin-bottom: 1rem;
+    padding: 0.7rem;
+    width: 100%;
+    box-sizing: border-box;
+     border: 1px solid #ccc;
+    border-radius: 6px;
+}
+button{
+  width:fit-content;
+ 
+  
+   align-self: flex-start;   /* aligns button to left of the form */
+    margin-left: 35px;           /* remove extra margin */
+    
+  padding: 10px 20px 10px 20px;
+  color: white;
+ 
+
+  border: none;  
+  border-radius: 6px;
+  background-color: rgb(122, 122, 227);
+}
+
+.error{
+  color:rgb(122, 53, 53);
+  font-size: 0.8rem;
+  margin-top: -0.5rem;
+  margin-bottom: 0.5rem;
+  display: block;
+
+}
+#result{
+  
+  margin-top: 1rem;
+  font-weight: bold;
+  color: green;
+  max-width: 400px;
+}
