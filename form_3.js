@@ -6,6 +6,7 @@ const emailErr=document.getElementById('emailErr');
 const age=document.getElementById('age');
 const ageErr=document.getElementById('ageErr');
 const result=document.getElementById('result');
+const Registration=document.getElementById('Registration');
 
 
 function clearErrors(){
@@ -13,7 +14,10 @@ function clearErrors(){
     emailErr.textContent="";
     ageErr.textContent="";
     result.textContent="";
+    Registration.textContent="  ";
+    
 }
+
 
 Regform.addEventListener('submit',function(e){
 
@@ -46,6 +50,9 @@ Regform.addEventListener('submit',function(e){
 
     result.className = 'success';
      result.textContent = 'Form submitted successfully — name: ' + name + ', email: ' + emailvalue + ', age: ' + agevalue + '.';
+     Registration.textContent = "Thank you for registering with us";
+     Registration.style.color="green" // ✅ add this back
+     
      Regform.reset();
 
 
